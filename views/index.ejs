@@ -2,8 +2,13 @@
 <%- include("partials/header.ejs") %>
 
 <!-- Body -->
-<h1>Oziel's Blog</h1>
 
+    <% for(let i = 0; i < posts.length; i++) { %>
+        <article>
+            <h2><%= posts[i].title %></h2>
+            <p><%= posts[i].body %></p>
+        </article>
+    <% } %>
 
 <!-- Footer -->
 <%- include("partials/footer.ejs") %>
