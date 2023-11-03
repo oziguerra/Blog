@@ -27,3 +27,7 @@ h1, h2, p {
 p {
   color: grey;
 }
+
+input {
+    align: left;
+}
